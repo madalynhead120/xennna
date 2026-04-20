@@ -26,12 +26,12 @@
 
 @font-face {
     font-family: Heading_Bold;
-    src: url(heading/Heading-Pro-Bold-trial.ttf);
+    src: url(Heading-Pro-Bold-trial.ttf);
 }
 
 @font-face {
     font-family: Heading_Heavy;
-    src: url(heading/Heading-Pro-Heavy-trial.ttf);
+    src: url(Heading-Pro-Heavy-trial.ttf);
 }
 
 body {
