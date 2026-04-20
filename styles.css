@@ -1,0 +1,244 @@
+:root {
+    --primary-color: white;
+    --text-color: black;
+    --accent-color: black;
+    --secondary-text-color: white;
+    --secondary-accent-color: whitesmoke;
+}
+
+.darkmode {
+    --primary-color: black;
+    --text-color: white;
+    --accent-color: white;
+    --secondary-text-color: black;
+    --secondary-accent-color: black;
+}
+
+@font-face {
+    font-family: Horizon;
+    src: url(horizon.ttf);
+}
+
+@font-face {
+    font-family: Horizon_Outlined;
+    src: url(horizon_outlined.ttf);
+}
+
+@font-face {
+    font-family: Heading_Bold;
+    src: url(heading/Heading-Pro-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: Heading_Heavy;
+    src: url(heading/Heading-Pro-Heavy-trial.ttf);
+}
+
+body {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    min-width: none;
+    max-width: 100%;
+}
+
+header {
+    border-bottom: 5px solid var(--accent-color);
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--accent-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
+
+.image img {
+    height: 400px;
+    width: 40x;
+    padding: 10px;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin:10px;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-family: Horizon;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.flexrow {
+    display: flexbox;
+    background-image: url(immortal\ cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    margin-bottom: 50px;
+}
+
+.flexrow p {
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 5px whitesmoke;
+    margin-top: 0;
+}
+
+.gg img {
+    height: 50%;
+    box-shadow: 5px 5px 10px var(--secondary-accent-color);
+}
+
+.i img {
+    height: 50%;
+    box-shadow: 5px 5px 10px var(--secondary-accent-color);
+}
+
+.gg ul li {
+    list-style: none;
+    font-family: Heading_Bold;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.i ul li {
+    list-style: none;
+    font-family: Heading_Bold;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.btn-group  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    padding:50px;
+    max-width: 100%;
+}
+
+.btn-group button {
+    font-family: Heading_Bold;
+    font-size: 30px;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.btn-group button:hover {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Horizon_Outlined;
+    font-size: 70px;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: Horizon;
+    color: var(--text-color);
+}
+
+h3 {
+    font-family: Horizon;
+    color: var(--text-color);
+}
+
+.xennna {
+    font-family: Horizon_Outlined;
+    color: var(--text-color);
+}
+
+.name {
+    font-family: Heading_Heavy;
+    color: var();
+}
+
+.content {
+    display: flex;
+}
+
+.content img {
+    height: 500px;
+    padding: 20px;
+}
+
+p {
+    font-family: Heading_Bold;
+    color: var(--text-color);
+    font-size: 18pt;
+    margin: 40px;
+}
+
+button {
+    border: 5px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    font-size: 35px;
+    font-family: Horizon;
+    padding: 10px;
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color:var(--accent-color);
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 15px;
+    bottom: 0;
+}
+
+footer p {
+    font-family: Arial;
+    color: var(--secondary-text-color);
+}
