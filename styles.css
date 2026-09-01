@@ -3,7 +3,7 @@
     --text-color: black;
     --accent-color: black;
     --secondary-text-color: white;
-    --secondary-accent-color: whitesmoke;
+    --secondary-accent-color: gray;
 }
 
 .darkmode {
@@ -90,15 +90,12 @@ header {
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
     padding: 0;
     margin:10px;
     border-bottom: 3px solid var(--accent-color);
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 40px;
 }
 
 nav ul li a {
@@ -109,12 +106,14 @@ nav ul li a {
 }
 
 .flexrow {
-    display: flexbox;
+    display: flex;
     background-image: url(immortal\ cover.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 50%;
     margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexrow p {
@@ -124,35 +123,34 @@ nav ul li a {
     margin-top: 0;
 }
 
-.gg img {
-    height: 50%;
+.releases {
+    display: flex;
+    justify-content: center;
+    padding: 20pt;
+}
+
+.releases img {
+    max-height: 200pt;
     box-shadow: 5px 5px 10px var(--secondary-accent-color);
 }
 
-.i img {
-    height: 50%;
-    box-shadow: 5px 5px 10px var(--secondary-accent-color);
+.releases h2 {
+    padding-left: 30pt;
+    padding-right: 30pt;
 }
 
-.gg ul li {
+.releases ul li {
     list-style: none;
     font-family: Heading_Bold;
     font-size: 20px;
     color: var(--text-color);
-}
+    padding-right: 30pt;
 
-.i ul li {
-    list-style: none;
-    font-family: Heading_Bold;
-    font-size: 20px;
-    color: var(--text-color);
 }
 
 .btn-group  {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:10px;
+    justify-content: space-evenly;
     padding:50px;
     max-width: 100%;
 }
@@ -196,7 +194,6 @@ h3 {
 
 .name {
     font-family: Heading_Heavy;
-    color: var();
 }
 
 .content {
@@ -232,13 +229,14 @@ button:hover {
 }
 
 footer {
+    position: absolute;
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 15px;
-    bottom: 0;
+    width: 100%;
 }
 
 footer p {
     font-family: Arial;
     color: var(--secondary-text-color);
+    padding: 15pt;
 }
